@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+.main {
+  height: 340px;
+  width: 350px;
+  margin: 70px 0px;
+  background-color: rgb(10, 10, 39);
+  border-radius: 20px;
+  padding: 12px;
+}
+.icon {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.output {
+  margin-left: 80px;
+  color: orange;
+  background-color: rgb(3, 3, 65);
+  margin-top: 17px;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  padding: 5px;
+  height: 20px;
+  width: 170px;
+  border: none;
+  border-radius: 20px;
+  justify-content: center;
+}
+.output > .text {
+  margin-left: 14px;
+  margin-top: 2px;
+  width: auto;
+}
+.par > h1 {
+  color: white;
+  margin-top: 25px;
+  margin-left: 90px;
+  margin-bottom: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.note {
+  color: gray;
+  font-weight: 200;
+  font-size: 15px;
+  padding-left: 26px;
+  margin-top: 12px;
+  justify-self: center;
+  text-justify: distribute-all-lines;
+  font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    align-items: start;
+  }
+  .main {
+    width: 100vw;
+    margin: 150px 15px;
+  }
+  .note {
+    font-size: 14px;
+  }
+}

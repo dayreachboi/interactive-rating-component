@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Thank-you.css">
+
+
+    <title>Thank-you</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="icon">
+            <img src="images/illustration-thank-you.svg"
+                alt="icon" height="100px" width="130px">
+        </div>
+
+        <div class="output">
+            <p class="text">You selected <span id="selectedRating"></span> out of 5</p>
+        </div>
+        <div class="par">
+            <h1>Thank you!</h1>
+            <div class="note">We appreciate you taking the time to give a rating. 
+                If you ever need more support, don't hesitate to get in touch!
+        </div>
+    </div>
+    <script>
+        const urlParams = new
+            URLSearchParams(window.location.search);
+        const rating = urlParams.get('rating');
+
+
+        document.getElementById('selectedRating').innerText = `${rating}`;
+    </script>
+    </div>
+</body>
+
+</html>

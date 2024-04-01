@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+.main {
+  height: 340px;
+  width: 350px;
+  margin: 70px 0px;
+  background-color: rgb(10, 10, 39);
+  border-radius: 20px;
+  padding: 12px;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(3, 3, 65);
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.par {
+  margin-top: 25px;
+}
+h2 {
+  color: white;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  margin-left: 18px;
+}
+.note {
+  margin-top: 15px;
+  margin-left: 18px;
+  color: gray;
+  font-size: 15px;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: start;
+  word-wrap: break-word;
+}
+.rating {
+  margin-top: 10px;
+  display: flex;
+  gap: 5px;
+}
+.btn {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+.submit {
+  width: 310px;
+  height: 42px;
+  color: white;
+  background-color: rgb(250, 99, 43);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Georgia, "Times New Roman", serif;
+  border: none;
+  border-radius: 20px;
+}
+.submit:hover {
+  background-color: white;
+  color: orangered;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.rating-button {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  color: aliceblue;
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgb(250, 99, 43);
+}
+.rating-button:hover {
+  background-color: aliceblue;
+  color: orangered;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.rating-button::after {
+  content: "";
+  position: absolute;
+  color: white;
+  background-color: gray;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  pointer-events: none;
+}
+.rating-button.clicked::after {
+  color: gray;
+  background-color: aliceblue;
+}
+.rating-button.clicked::before {
+  background-color: blue;
+}
+.rating-button:active::before {
+  background-color: blue;
+}
+.rating-button:active::after {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    align-items: start;
+  }
+  .main {
+    width: 100vw;
+    margin: 150px 15px;
+  }
+  .note {
+    font-size: 14px;
+  }
+}
